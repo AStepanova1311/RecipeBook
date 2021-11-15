@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open_recipe"
+        android:title="@string/open_recipe"
+        android:icon="@drawable/open_recipe"
+        />
+    <item android:id="@+id/create_recipe"
+        android:title="@string/create_recipe"
+        android:icon="@drawable/create_recipe"
+        />
+</menu>
