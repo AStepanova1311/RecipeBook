@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class OpenRecipeFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,5 +29,6 @@ class OpenRecipeFragment : Fragment() {
         bannerRecyclerView.adapter = BannerAdapter(bannerList)
 
               return view
+
     }
 }

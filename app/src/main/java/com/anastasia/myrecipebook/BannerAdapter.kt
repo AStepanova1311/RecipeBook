@@ -8,7 +8,7 @@ class BannerAdapter (private val bannerList: List<Banner>): RecyclerView.Adapter
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BannerViewHolder {
 
         val bannerView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_open_recipe, parent, false)
+            .inflate(R.layout.banner_card_list_item, parent, false)
 
         return BannerViewHolder(bannerView)
     }
