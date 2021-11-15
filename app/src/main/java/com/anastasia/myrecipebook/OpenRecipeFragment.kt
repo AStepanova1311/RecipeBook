@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class OpenRecipeFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,14 +24,9 @@ class OpenRecipeFragment : Fragment() {
         )
         val bannerRecyclerView: RecyclerView = view.findViewById(R.id.open_your_recipe_recycle_view)
         bannerRecyclerView.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         bannerRecyclerView.adapter = BannerAdapter(bannerList)
 
               return view
     }
-
-    //creates Banner list to view the Recipes
-
-
-
 }
