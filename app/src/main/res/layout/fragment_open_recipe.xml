@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="30dp"
-    android:layout_margin="5dp"
-    android:layout_height="150dp">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OpenRecipeFragment">
 
-    <ImageView
-        android:id="@+id/banner_image_view"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/open_your_recipe_recycle_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/banner_image"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/recipe_name"
-        android:layout_width="match_parent"
-        android:layout_gravity="bottom"
-        android:layout_height="wrap_content"/>
+    </androidx.recyclerview.widget.RecyclerView>
 
-</com.google.android.material.card.MaterialCardView>
+</FrameLayout>
