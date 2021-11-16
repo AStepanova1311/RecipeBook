@@ -11,7 +11,7 @@ private const val LAST_SELECTED_ITEM = "LAST_SELECTED_ITEM"
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var recipeBookNavigationMenu : BottomNavigationView
+    private lateinit var recipeBookNavigationMenu: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,24 +19,25 @@ class MainActivity : AppCompatActivity() {
 
         recipeBookNavigationMenu = findViewById(R.id.recipe_book_navigation_menu)
 
-        recipeBookNavigationMenu.setOnItemSelectedListener { item->
-           var fragment: Fragment? = null
-           when(item.itemId) {
-               R.id.open_recipe->{
-                   fragment = OpenRecipeFragment()
-               }
-               R.id.create_recipe -> {
-                   fragment = CreateRecipeFragment()
+        recipeBookNavigationMenu.setOnItemSelectedListener { item ->
+            var fragment: Fragment? = null
+            when (item.itemId) {
+                R.id.open_recipe -> {
+                    fragment = OpenRecipeFragment()
+                }
+                R.id.create_recipe -> {
+                    fragment = CreateRecipeFragment()
 
-               }
-           }
+                }
+            }
             replaceFragment(fragment!!)
             true
         }
-        recipeBookNavigationMenu.selectedItemId = savedInstanceState?.getInt(LAST_SELECTED_ITEM)?:R.id.open_recipe
+        recipeBookNavigationMenu.selectedItemId =
+            savedInstanceState?.getInt(LAST_SELECTED_ITEM) ?: R.id.open_recipe
     }
 
-        override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         outState.putInt(LAST_SELECTED_ITEM, recipeBookNavigationMenu.selectedItemId)
         super.onSaveInstanceState(outState)
     }

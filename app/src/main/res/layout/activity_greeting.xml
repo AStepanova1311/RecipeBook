@@ -6,11 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".GreetingActivity">
 
-    <ImageView
+   <!-- <ImageView
         android:id="@+id/recipe_book_cover"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/create_recipe"
-        android:contentDescription="@string/recipe_book_cover" />
+        android:contentDescription="@string/recipe_book_cover" />-->
+    <ImageView
+        android:id="@+id/recipe_book_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/create_recipe_cover"
+       />
+<!--<Button
+    android:id="@+id/open_my_book"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/open_me_recipe_book"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

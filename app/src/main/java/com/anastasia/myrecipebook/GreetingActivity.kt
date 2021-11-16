@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.widget.Button
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -14,6 +15,7 @@ class GreetingActivity : AppCompatActivity() {
 
 
         val intentMainActivity = Intent(this, MainActivity::class.java)
-                Handler().postDelayed({startActivity(intentMainActivity)}, 3000)
+
+        Handler().postDelayed({startActivity(intentMainActivity)}, 3000)
     }
 }

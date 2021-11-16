@@ -14,7 +14,8 @@
         android:contentDescription="@string/banner_image"/>
 
     <TextView
-      android:id="@+id/recipe_name"
+        android:id="@+id/recipe_name"
+        style="@style/Theme.MyRecipeBook.TextStyle"
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="wrap_content"/>
