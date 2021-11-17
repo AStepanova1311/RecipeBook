@@ -10,7 +10,7 @@ import android.view.ViewGroup
 
 class CreateRecipeFragment : Fragment() {
 
-
+// Create fragment to input recipes that refers to create recipe layout
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

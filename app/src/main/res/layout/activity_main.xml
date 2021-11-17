@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+// Create Container View to place two fragments
    <androidx.fragment.app.FragmentContainerView
        android:id="@+id/fragment_container"
        android:layout_width="match_parent"
@@ -14,7 +14,8 @@
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintBottom_toTopOf="@id/recipe_book_navigation_menu"
       />
-
+// Create BottomNavigationView then in res/menu folder create two buttons
+   //to switch between fragments
    <com.google.android.material.bottomnavigation.BottomNavigationView
        android:id="@+id/recipe_book_navigation_menu"
        android:layout_width="match_parent"

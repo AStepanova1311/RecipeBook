@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     tools:context=".CreateRecipeFragment"
     android:orientation="vertical">
-
+// Create views to Input new recipes
     <EditText
         android:id="@+id/recipe_name"
         android:layout_width="match_parent"
@@ -23,6 +23,22 @@
         android:hint="@string/enter_your_recipe"
         android:inputType="textMultiLine"
         android:maxLines="20" />
+
+    <Button
+        android:id="@+id/save_recipe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/save"
+        />
+    <Button
+        android:id="@+id/add_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/add_image"
+        />
+
 
 
 </LinearLayout>

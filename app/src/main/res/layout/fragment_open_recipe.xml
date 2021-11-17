@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     tools:context=".OpenRecipeFragment">
 
+    // Create Recycle view to show created recipes
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/open_your_recipe_recycle_view"
         android:layout_width="match_parent"

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class OpenRecipeFragment : Fragment() {
 
-
+// Describe th logic of implementing recycle view to Open recipe fragment
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,7 +21,10 @@ class OpenRecipeFragment : Fragment() {
 
         val bannerList: List<Banner> = listOf(
             Banner(R.drawable.rice_dish, "Rice dish"),
-            Banner(R.drawable.moscow_pastry, "Moscow pastry")
+            Banner(R.drawable.moscow_pastry, "Moscow pastry"),
+            Banner(R.drawable.praga_cake, "Prague"),
+            Banner(R.drawable.pancakes, "Pancakes"),
+            Banner(R.drawable.salad, "Salad")
         )
         val bannerRecyclerView: RecyclerView = view.findViewById(R.id.open_your_recipe_recycle_view)
         bannerRecyclerView.layoutManager =

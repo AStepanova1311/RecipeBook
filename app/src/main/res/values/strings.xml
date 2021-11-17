@@ -7,7 +7,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="banner_image">banner_image</string>
     <string name="my_recipe_book">My recipe book</string>
-    <string name="open_me_recipe_book">Open me recipe book</string>
-    <string name="enter_your_recipe">enter_your_recipe</string>
-    <string name="enter_your_recipe_name">enter_your_recipe_name</string>
+    <string name="open_me_recipe_book">Open my recipe book</string>
+    <string name="enter_your_recipe">Ingredients and cooking modes</string>
+    <string name="enter_your_recipe_name">Recipe name</string>
+    <string name="Save">Save</string>
+    <string name="save">Save</string>
+    <string name="add_image">Add image</string>
 </resources>

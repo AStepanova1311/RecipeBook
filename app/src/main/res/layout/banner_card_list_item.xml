@@ -5,7 +5,7 @@
     app:cardCornerRadius="30dp"
     android:layout_margin="5dp"
     android:layout_height="150dp">
-
+// Create views of created recipes to be shown in Fragments
     <ImageView
         android:id="@+id/banner_image_view"
         android:layout_width="match_parent"
@@ -19,5 +19,6 @@
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="wrap_content"/>
+
 
 </com.google.android.material.card.MaterialCardView>
